@@ -1,0 +1,31 @@
+.realisations-rectangle-arrondi-orange {
+  border-radius: 2vh;
+  height: 100%;
+  border-color: #EA761B ;
+  border-style: solid;
+}
+
+.realisations-rectangle-arrondi-bleu {
+  border-radius: 2vh;
+  height: 100%;
+  border-color: #0C57A2 ;
+  border-style: solid;
+}
+
+@media (max-width: 767px) {
+  #carouselRealisationImage {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #carouselRealisationImage {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #carouselRealisationImage {
+    height: 100%;
+  }
+}

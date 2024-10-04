@@ -1,0 +1,42 @@
+.bg-bleu-fonce {
+  background-color: #08263F !important;
+}
+
+.border-col {
+  border-left: 3px solid #EA761B;
+}
+
+
+
+@media (max-width: 767px) {
+  #rectangle-incline {
+    width: 20vw;
+    height: 5vh;
+  }
+
+  .hauteur-footer {
+    min-height: 50vh !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #rectangle-incline {
+    width: 10vw;
+    height: 5vh;
+  }
+
+  .hauteur-footer {
+    min-height: 60vh !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  #rectangle-incline {
+    width: 10vw;
+    height: 7.5vh;
+  }
+
+  .hauteur-footer {
+    min-height: 45vh !important;
+  }
+}

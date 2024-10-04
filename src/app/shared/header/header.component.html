@@ -1,0 +1,42 @@
+<!-- Navbar -->
+<div class="row">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top bg-opacity-50 py-0 mt-4">
+    <div class="container">
+        <a class="navbar-brand py-0 mb-2 mt-0 ms-4" routerLink="">
+            <img src="assets/images/Logo-EST.png" alt="Logo" class="img-fluid" id="logo-header">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link fs-header text-white text-shadow" routerLink="">Accueil</a>
+                </li>
+                <li class="nav-item dropdown ms-lg-4">
+                  <a class="nav-link dropdown-toggle fs-header text-white text-shadow" routerLink="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu bg-black bg-opacity-75">
+                    <li><a class="dropdown-item fs-header text-white text-shadow border-bottom" routerLink="/services/btp">BTP</a></li>
+                    <li><a class="dropdown-item fs-header text-white text-shadow border-bottom" routerLink="/services/beton">Production béton</a></li>
+                    <li><a class="dropdown-item fs-header text-white text-shadow" routerLink="/services/immobilier">Promotions immobilières</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link fs-header text-white text-shadow" routerLink="/realisations">Réalisations</a>
+                </li>
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link fs-header text-white text-shadow" routerLink="/a-propos">À propos</a>
+                </li>
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link fs-header text-white text-shadow" routerLink="/blog">Blog/Actualités</a>
+                </li>
+            </ul>
+            <div class="nav-item ms-lg-auto me-lg-5">
+              <a class="nav-link fs-header text-white text-shadow" routerLink="/contact">Contact</a>
+            </div>
+        </div>
+    </div>
+  </nav>
+</div>

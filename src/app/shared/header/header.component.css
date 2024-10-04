@@ -1,0 +1,37 @@
+.nav-link {
+  text-shadow: 5px 5px 5px black !important;
+}
+
+@media (max-width: 767px) {
+  .fs-header {
+    font-size: 12px !important;
+  }
+
+  #logo-header {
+    height: 10vh;
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fs-header {
+    font-size: 16px !important;
+  }
+
+  #logo-header {
+    height: 10vh;
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fs-header {
+    font-size: 16px !important;
+  }
+
+  #logo-header {
+    height: 10vh;
+    margin-top: -10px;
+  }
+}
+
