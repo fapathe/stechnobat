@@ -1,4 +1,4 @@
-FROM node:latest
+FROM docker.io/node:latest AS build
 WORKDIR /build
 
 COPY tsconfig*.json package*.json ./
@@ -12,8 +12,8 @@ RUN npm run build
 
 FROM quay.io/mohamedf0/serve
 
-COPY --from=build /build/dist/document-management /app
+COPY --from=build /build/dist /app
 
-CMD ["serve", "-s", "-p", "80", "/app"]
+CMD ["serve", "-s", "-p", "8080", "/app"]
 
-EXPOSE 80
+EXPOSE 8080
