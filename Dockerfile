@@ -1,4 +1,4 @@
-FROM quay.io/mohamedf0/node:18.19 AS build
+FROM quay.io/mohamedf0/node:16.10 AS build
 
 WORKDIR /build
 
