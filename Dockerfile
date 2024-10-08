@@ -1,6 +1,6 @@
 # Step 1: Build the Angular app
 FROM docker.io/node:18 AS build
- AS build
+
 WORKDIR /build
 
 # Copy the necessary config and package files first to leverage Docker cache
@@ -21,6 +21,6 @@ FROM quay.io/mohamedf0/serve
 # Copy the built files from the build stage
 COPY --from=build /build/dist/est/browser /app
 
-CMD ["serve", "-s", "-p", "80", "/app"]
+CMD ["serve", "-s", "-p", "4200", "/app"]
 
-EXPOSE 80
+EXPOSE 4200
