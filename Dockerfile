@@ -1,6 +1,6 @@
 # Step 1: Build the Angular app
-FROM node:18 AS build
-
+FROM docker.io/node:18 AS build
+ AS build
 WORKDIR /build
 
 # Copy the necessary config and package files first to leverage Docker cache
@@ -21,8 +21,6 @@ FROM quay.io/mohamedf0/serve
 # Copy the built files from the build stage
 COPY --from=build /build/dist/est/browser /app
 
-# Serve the app on port 8080
-CMD ["serve", "-s", "-p", "4200", "/app"]
+CMD ["serve", "-s", "-p", "80", "/app"]
 
-# Expose port 8080
-EXPOSE 4200
+EXPOSE 80
